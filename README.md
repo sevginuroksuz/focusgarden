@@ -26,11 +26,13 @@ React Native tabanlı bir verimlilik uygulaması: Pomodoro tekniğini oyunlaşt�
 
 ## Mimari ve Akış Şeması
 
-* **Mimari Diyagram**
-  ![Mimari Diyagram](diagrams/architecture.png)
+<p align="center">
+  <img src="diagrams/architecture.png" alt="Mimari Diyagram" width="80%" style="max-width:800px; height:auto;"/>
+</p>
 
-* **Algoritma Akış Şeması**
-  ![Akış Şeması](diagrams/algorithm.drawio.png)
+<p align="center">
+  <img src="diagrams/algorithm.drawio.png" alt="Algoritma Akış Şeması" width="80%" style="max-width:800px; height:auto;"/>
+</p>
 
 ---
 
