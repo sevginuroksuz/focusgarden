@@ -26,13 +26,11 @@ React Native tabanlı bir verimlilik uygulaması: Pomodoro tekniğini oyunlaşt�
 
 ## Mimari ve Akış Şeması
 
-<p align="center">
-  <img src="diagrams/architecture.png" alt="Mimari Diyagram" width="80%" style="max-width:300px; height:auto;"/>
-</p>
+| Bölüm                   | Görsel                                                                                                                                                                              | Açıklama                                                                                                                                                                                                                          |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Mimari Diyagram**     | <p align="center"><img src="diagrams/architecture.png" alt="Mimari Diyagram" width="80%" style="max-width:600px; height:auto;"/></p>                                                | Uygulamanın React Native frontend’inden C# backend’ine, Convex veri tabanından bulut servislerine kadar uçtan uca veri akışını ve bileşenler arası entegrasyonu detaylı şekilde gösterir.                                         |
+| **Algoritma Akış Şeması** | <p align="center"><img src="diagrams/algorithm.drawio.png" alt="Algoritma Akış Şeması" width="80%" style="max-width:600px; height:auto;"/></p>                                     | Zamanlayıcı seansının başlatılmasından sanal çiçeğin kademeli açılım animasyonuna ve Convex’e veri kaydına kadar tüm işlem adımlarını, karar noktalarını ve hata durumlarındaki yönlendirmeleri adım adım görselleştirir.          |
 
-<p align="center">
-  <img src="diagrams/algorithm.drawio.png" alt="Algoritma Akış Şeması" width="80%" style="max-width:300px; height:auto;"/>
-</p>
 
 ---
 
