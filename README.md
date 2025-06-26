@@ -8,6 +8,7 @@ React Native tabanlı bir verimlilik uygulaması: Pomodoro tekniğini oyunlaşt�
 
 * [Proje](#proje)
 * [Özellikler](#özellikler)
+* [Mimari ve Akış Şeması](#mimari-ve-akış-şeması)
 * [Ekran Açıklamaları](#ekran-açıklamaları)
 * [Kurulum](#kurulum)
 * [Kullanım](#kullanım)
