@@ -1,50 +1,187 @@
-# Welcome to your Expo app 👋
+# FocusGarden
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+React Native tabanlı bir verimlilik uygulaması: Pomodoro tekniğini oyunlaştırarak kullanıcıların odaklandıkları süreyi kaydeder ve sanal bir çiçek bahçesine dönüştürerek motivasyon sağlar.
 
-## Get started
+---
 
-1. Install dependencies
+## İçindekiler
+
+* [Proje](#proje)
+* [Özellikler](#özellikler)
+* [Ekran Açıklamaları](#ekran-açıklamaları)
+* [Kurulum](#kurulum)
+* [Kullanım](#kullanım)
+* [Linkler](#linkler)
+* [Lisans](#lisans)
+* [Katkıda Bulunanlar](#katkıda-bulunanlar)
+* [İletişim](#iletişim)
+
+---
+
+## Proje
+
+**FocusGarden**, kullanıcıların odak sürelerini artırmayı hedefleyen, Pomodoro temelli bir mobil uygulamadır. Her çalışma seansı sonunda sanal bahçenize çiçekler eklenir veya kuruyan çiçekler görünür; böylece görsel ilerleme motivasyonunuzu pekiştirir.
+
+---
+
+## Mimari ve Akış Şeması
+
+* **Mimari Diyagram**
+  ![Mimari Diyagram](diagrams/architecture.png)
+
+* **Algoritma Akış Şeması**
+  ![Akış Şeması](diagrams/algorithm.drawio.png)
+
+---
+
+## Özellikler
+
+* **Zamanlayıcı**: Öntanımlı 15/25/45 dakikalık seanslar.
+* **Çiçek Bahçesi**: Seans sonuçlarına göre çiçek ekleme animasyonları.
+* **Beyaz Gürültü Desteği**: Odağa odaklanmayı kolaylaştıran ses oynatıcı.
+* **İlerleme Görselleştirme**: Günlük/haftalık/aylık çalışma grafikleri.
+* **Profil ve Yer İşaretleri**: Kullanıcı bilgileri, kaydedilen gönderiler ve paylaşımlar.
+
+---
+
+## Ekran Açıklamaları
+
+### 0. Açılış Ekranı (Splash)
+
+![Splash Ekranı](screenshots/splash.jpg)
+
+* Uygulama ilk açıldığında görünen ekran.
+* Logo animasyonu ve yükleniyor göstergesi ile kullanıcı deneyimini zenginleştirir.
+* Yükleme tamamlandığında otomatik olarak Ana Ekran’a yönlendirir.
+
+### 1. Ana Ekran (Home)
+
+![Ana Ekran](screenshots/feed.jpg)
+
+* Görsel özet paneli: günlük toplam çalışma süresi, tamamlanan seans sayısı ve başarı yüzdesini gösterir.
+* Hızlı başlat makroları: 15, 25 veya 45 dakikalık varsayılan seansları tek dokunuşla başlatma.
+* Alt navigasyon çubuğu: Oluştur, Zamanlayıcı, Bahçe, Profil sekmeleri arası hızlı geçiş.
+* Animasyonlu rozet animasyonu: Seans hedefine ulaşıldığında görsel geribildirim sağlar.
+
+### 2. Zamanlayıcı (Timer)
+
+![Zamanlayıcı](screenshots/work.jpg)
+
+* Büyük fontta kalan süre sayacı ve çevresinde dolan progres halkası.
+* Başlat/Durdur/Pas geç (skip) butonları; durumlara göre renk ve ikon değişimi.
+* Sol alt köşede beyaz gürültü ses kontrolü: aç/kapat butonu ve ses seviyesi slider’ı.
+* Seans tamamlandığında titreşim, bildirim ve otomatik bahçe güncelleme tetiklenir.
+
+### 3. Oluştur (Create)
+
+![Oluştur Ekranı](screenshots/create.jpg)
+
+* Seans başlığı (isteğe bağlı) ve süre seçimi için form alanları (dropdown veya slider).
+* Ses tercihi: beyaz gürültü, doğa sesleri veya sessiz mod seçenekleri.
+* “Başlat” butonu: form validasyonu tamamlandıktan sonra aktif hale gelir.
+* Kayıt ön izleme: oluşturulan seans detaylarını gösteren küçük kart sunar.
+
+### 4. Profil (Profile)
+
+![Profil](screenshots/profile.jpg)
+
+* Kullanıcı profili: avatar, kullanıcı adı, toplam odak süresi ve tamamlanan seans sayısı kartı.
+* Hedef takibi: günlük ve haftalık hedef yüzdesi donut grafiği ile görselleştirilir.
+* Ayarlar: tema (açık/karanlık), bildirim tercihleri, ses ayarları sekmesi.
+* Paylaşım paneli: seans özeti veya başarı rozeti sosyal medyada paylaşma butonu.
+
+### 5. Yer İşaretleri (Bookmarks)
+
+![Yer İşaretleri](screenshots/bookmark.jpg)
+
+* Kaydedilen seanslar ve notlar listesi; her kartta tarih, süre ve kısa açıklama.
+* Filtreleme ve sıralama: tarih, etiket veya başarı yüzdesine göre düzenleme.
+* Hızlı silme/düzenleme ikonları: kart üzerinden işlem yapma imkânı.
+* Alt kısımda popüler seans etiketlerini gösteren küçük bir şerit grafik.
+
+### 6. Profil Bahçesi (Profile Garden)
+
+![Profil Bahçesi](screenshots/garden.jpg)
+
+* Yıllık ızgara görünümü: 365 hücrede her gün tamamlanan seans çiçekle gösterilir.
+* Heatmap görünümü: seans sürelerine göre koyuluk seviyesi değiştiren renk skalası.
+* Detaylı modal: hücreye dokununca tarih, süre ve çiçek çeşidi bilgilerini gösterir.
+* Haftalık/aylık filtre: üstteki dropdown ile farklı zaman aralıklarını inceleyin.
+
+---
+
+## Kurulum
+
+1. Depoyu klonlayın:
+
+   ```bash
+   git clone https://github.com/sevginuroksuz/focusgarden.git
+   cd focusgarden
+   ```
+2. Bağımlılıkları yükleyin:
 
    ```bash
    npm install
    ```
-
-2. Start the app
+3. Uygulamayı başlatın:
 
    ```bash
-   npx expo start
+   npm start
+   # veya Expo ile
+   expo start
    ```
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Kullanım
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Aşağıdaki adımlar ile tüm özellikleri kullanabilirsiniz:
 
-## Get a fresh project
+1. **Zamanlayıcı Kontrolü**
 
-When you're ready, run:
+   * Seans ilerledikçe sanal çiçeğiniz kademeli olarak açılır; animasyonla tomurcuktan tam çiçeğe dönüşüm izlenir.
+   * Sayısal gösterge, geçen süreyi net şekilde gösterir.
+   * Seans başında seçilmiş beyaz gürültü veya kullanıcı ses dosyası otomatik oynatılır; ses kontrol butonuyla açma/kapatma ve ses düzeyi ayarlanabilir.
 
-```bash
-npm run reset-project
-```
+2. **Çiçek Bahçesi**
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+   * Seans tamamlandığında otomatik olarak bahçenize çiçek eklenir.
+   * **Bahçe** sekmesinde günlük, haftalık ve aylık ilerlemenizi inceleyin.
 
-## Learn more
+3. **Profil Yönetimi**
 
-To learn more about developing your project with Expo, look at the following resources:
+   * **Profil** sekmesinden kullanıcı adı, toplam odak süresi, tamamlanan seans sayısı ve hedef ilerlemenizi görüntüleyin.
+   * Çubuk grafik ile günlük, haftalık, aylık ve yıllık hedef takibini yapın.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+4. **Yer İşaretleri (Bookmarks)**
 
-## Join the community
+   * Önemli veya beğendiğiniz gönderileri kaydedip **Yer İşaretleri** sekmesinde listeleyin.
 
-Join our community of developers creating universal apps.
+5. **Paylaşım**
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   * Seans özetlerinizi veya kazandığınız rozetleri uygulamada gönderi olarak paylaşabilirsiniz.
+
+---
+
+## Linkler
+
+* **GitHub Depo:** [https://github.com/sevginuroksuz/focusgarden](https://github.com/sevginuroksuz/focusgarden)
+* **YouTube Tanıtım Videosu:** [https://youtu.be/YOUR\_VIDEO\_ID](https://youtu.be/YOUR_VIDEO_ID)
+
+---
+
+## Lisans
+
+Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır.
+
+---
+
+## Katkıda Bulunanlar
+* Sevgi Nur Öksüz (Proje sahibi ve baş geliştirici)
+* Katkılarınız için pull request ve issue’ları bekliyoruz.
+
+---
+
+## İletişim
+
+Sevgi Nur Öksüz – GitHub: [sevginuroksuz](https://github.com/sevginuroksuz)
