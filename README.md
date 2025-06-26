@@ -46,80 +46,16 @@ React Native tabanlı bir verimlilik uygulaması: Pomodoro tekniğini oyunlaşt�
 
 ## Ekran Açıklamaları
 
-### 0. Açılış Ekranı (Splash)
-
-<p align="center">
-  <img src="screenshots/splash.jpg" alt="Splash" width="300" />
-</p>
-
-* Uygulama ilk açıldığında görünen ekran.
-* Logo animasyonu ve yükleniyor göstergesi ile kullanıcı deneyimini zenginleştirir.
-* Yükleme tamamlandığında otomatik olarak Ana Ekran’a yönlendirir.
-
-### 1. Ana Ekran (Home)
-
-<p align="center">
-  <img src="screenshots/feed.jpg" alt="Ana Ekran" width="300" />
-</p>
-
-* Görsel özet paneli: günlük toplam çalışma süresi, tamamlanan seans sayısı ve başarı yüzdesini gösterir.
-* Hızlı başlat makroları: 15, 25 veya 45 dakikalık varsayılan seansları tek dokunuşla başlatma.
-* Alt navigasyon çubuğu: Oluştur, Zamanlayıcı, Bahçe, Profil sekmeleri arası hızlı geçiş.
-* Animasyonlu rozet animasyonu: Seans hedefine ulaşıldığında görsel geribildirim sağlar.
-
-### 2. Zamanlayıcı (Timer)
-
-<p align="center">
-  <img src="screenshots/work.jpg" alt="Çalışma Ekranı" width="300" />
-</p>
-
-* Büyük fontta kalan süre sayacı ve çevresinde dolan progres halkası.
-* Başlat/Durdur/Pas geç (skip) butonları; durumlara göre renk ve ikon değişimi.
-* Sol alt köşede beyaz gürültü ses kontrolü: aç/kapat butonu ve ses seviyesi slider’ı.
-* Seans tamamlandığında titreşim, bildirim ve otomatik bahçe güncelleme tetiklenir.
-
-### 3. Oluştur (Create)
-
-<p align="center">
-  <img src="screenshots/create.jpg" alt="Gönderi Oluşturma Ekranı" width="300" />
-</p>
-
-* Seans başlığı (isteğe bağlı) ve süre seçimi için form alanları (dropdown veya slider).
-* Ses tercihi: beyaz gürültü, doğa sesleri veya sessiz mod seçenekleri.
-* “Başlat” butonu: form validasyonu tamamlandıktan sonra aktif hale gelir.
-* Kayıt ön izleme: oluşturulan seans detaylarını gösteren küçük kart sunar.
-
-### 4. Profil (Profile)
-
-<p align="center">
-  <img src="screenshots/profile.jpg" alt="Profil Ekranı" width="300" />
-</p>
-* Kullanıcı profili: avatar, kullanıcı adı, toplam odak süresi ve tamamlanan seans sayısı kartı.
-* Hedef takibi: günlük ve haftalık hedef yüzdesi donut grafiği ile görselleştirilir.
-* Ayarlar: tema (açık/karanlık), bildirim tercihleri, ses ayarları sekmesi.
-* Paylaşım paneli: seans özeti veya başarı rozeti sosyal medyada paylaşma butonu.
-
-### 5. Yer İşaretleri (Bookmarks)
-
-<p align="center">
-  <img src="screenshots/bookmark.jpg" alt="Yer İşaretleri Ekranı" width="300" />
-</p>
-
-* Kaydedilen seanslar ve notlar listesi; her kartta tarih, süre ve kısa açıklama.
-* Filtreleme ve sıralama: tarih, etiket veya başarı yüzdesine göre düzenleme.
-* Hızlı silme/düzenleme ikonları: kart üzerinden işlem yapma imkânı.
-* Alt kısımda popüler seans etiketlerini gösteren küçük bir şerit grafik.
-
-### 6. Profil Bahçesi (Profile Garden)
-
-<p align="center">
-  <img src="screenshots/garden.jpg" alt="Profil Bahçesi" width="300" />
-</p>
-
-* Yıllık ızgara görünümü: 365 hücrede her gün tamamlanan seans çiçekle gösterilir.
-* Heatmap görünümü: seans sürelerine göre koyuluk seviyesi değiştiren renk skalası.
-* Detaylı modal: hücreye dokununca tarih, süre ve çiçek çeşidi bilgilerini gösterir.
-* Haftalık/aylık filtre: üstteki dropdown ile farklı zaman aralıklarını inceleyin.
+---
+| No | Ekran                 | Görsel                                                                                               | Açıklama                                                                                                                                                                                                                         |
+|----|-----------------------|------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0  | Açılış Ekranı (Splash) | <p align="center"><img src="screenshots/splash.jpg" alt="Splash" width="200" /></p>                  | - Uygulama ilk açıldığında görünen ekran.<br>- Logo animasyonu ve yükleniyor göstergesi ile kullanıcı deneyimini zenginleştirir.<br>- Yükleme tamamlandığında otomatik olarak Ana Ekran’a yönlendirir.                                 |
+| 1  | Ana Ekran (Home)      | <p align="center"><img src="screenshots/feed.jpg" alt="Ana Ekran" width="200" /></p>                 | - Görsel özet paneli: günlük toplam çalışma süresi, tamamlanan seans sayısı ve başarı yüzdesi.<br>- Hızlı başlat makroları: 15, 25 veya 45 dakikalık varsayılan seansları tek dokunuşla başlatma.<br>- Alt navigasyon çubuğu.<br>- Animasyonlu rozet animasyonu. |
+| 2  | Zamanlayıcı (Timer)   | <p align="center"><img src="screenshots/work.jpg" alt="Çalışma Ekranı" width="200" /></p>            | - Büyük fontta kalan süre sayacı ve çevresinde dolan progres halkası.<br>- Başlat/Durdur/Pas geç (skip) butonları; durumlara göre renk ve ikon değişimi.<br>- Sol alt köşede beyaz gürültü ses kontrolü.<br>- Seans tamamlandığında titreşim, bildirim ve bahçe güncelleme. |
+| 3  | Oluştur (Create)      | <p align="center"><img src="screenshots/create.jpg" alt="Gönderi Oluşturma" width="200" /></p>       | - Seans başlığı ve süre seçimi için form alanları (dropdown/slider).<br>- Ses tercihi: beyaz gürültü, doğa sesleri veya sessiz mod.<br>- “Başlat” butonu aktifleşince seans başlar.<br>- Kayıt ön izleme kartı.                                |
+| 4  | Profil (Profile)      | <p align="center"><img src="screenshots/profile.jpg" alt="Profil Ekranı" width="200" /></p>          | - Avatar, kullanıcı adı, toplam odak süresi ve tamamlanan seans sayısı kartı.<br>- Günlük/haftalık hedef takibi için donut grafiği.<br>- Ayarlar: tema, bildirim ve ses seçenekleri.<br>- Sosyal medyada paylaşım butonu.                    |
+| 5  | Yer İşaretleri (Bookmarks) | <p align="center"><img src="screenshots/bookmark.jpg" alt="Yer İşaretleri" width="200" /></p>     | - Kaydedilen seanslar ve notlar listesi; tarih, süre ve kısa açıklama.<br>- Filtreleme/sıralama: tarih, etiket, başarı yüzdesi.<br>- Hızlı silme/düzenleme ikonları.<br>- Popüler seans etiketlerini gösteren şerit grafik.        |
+| 6  | Profil Bahçesi (Garden)    | <p align="center"><img src="screenshots/garden.jpg" alt="Profil Bahçesi" width="200" /></p>        | - 365 hücreli yıllık ızgara: her gün çiçek ile gösterilir.<br>- Heatmap görünümü: seans sürelerine göre renk skalası.<br>- Hücreye dokununca detaylı modal.<br>- Haftalık/aylık filtre dropdown’u.                                             |
 
 ---
 
