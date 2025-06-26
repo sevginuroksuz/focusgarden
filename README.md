@@ -48,7 +48,9 @@ React Native tabanlı bir verimlilik uygulaması: Pomodoro tekniğini oyunlaşt�
 
 ### 0. Açılış Ekranı (Splash)
 
-![Splash Ekranı](screenshots/splash.jpg)
+<p align="center">
+  <img src="screenshots/splash.jpg" alt="Splash" width="300" />
+</p>
 
 * Uygulama ilk açıldığında görünen ekran.
 * Logo animasyonu ve yükleniyor göstergesi ile kullanıcı deneyimini zenginleştirir.
@@ -56,7 +58,9 @@ React Native tabanlı bir verimlilik uygulaması: Pomodoro tekniğini oyunlaşt�
 
 ### 1. Ana Ekran (Home)
 
-![Ana Ekran](screenshots/feed.jpg)
+<p align="center">
+  <img src="screenshots/feed.jpg" alt="Ana Ekran" width="300" />
+</p>
 
 * Görsel özet paneli: günlük toplam çalışma süresi, tamamlanan seans sayısı ve başarı yüzdesini gösterir.
 * Hızlı başlat makroları: 15, 25 veya 45 dakikalık varsayılan seansları tek dokunuşla başlatma.
@@ -65,7 +69,9 @@ React Native tabanlı bir verimlilik uygulaması: Pomodoro tekniğini oyunlaşt�
 
 ### 2. Zamanlayıcı (Timer)
 
-![Zamanlayıcı](screenshots/work.jpg)
+<p align="center">
+  <img src="screenshots/work.jpg" alt="Çalışma Ekranı" width="300" />
+</p>
 
 * Büyük fontta kalan süre sayacı ve çevresinde dolan progres halkası.
 * Başlat/Durdur/Pas geç (skip) butonları; durumlara göre renk ve ikon değişimi.
@@ -74,7 +80,9 @@ React Native tabanlı bir verimlilik uygulaması: Pomodoro tekniğini oyunlaşt�
 
 ### 3. Oluştur (Create)
 
-![Oluştur Ekranı](screenshots/create.jpg)
+<p align="center">
+  <img src="screenshots/create.jpg" alt="Gönderi Oluşturma Ekranı" width="300" />
+</p>
 
 * Seans başlığı (isteğe bağlı) ve süre seçimi için form alanları (dropdown veya slider).
 * Ses tercihi: beyaz gürültü, doğa sesleri veya sessiz mod seçenekleri.
@@ -83,8 +91,9 @@ React Native tabanlı bir verimlilik uygulaması: Pomodoro tekniğini oyunlaşt�
 
 ### 4. Profil (Profile)
 
-![Profil](screenshots/profile.jpg)
-
+<p align="center">
+  <img src="screenshots/profile.jpg" alt="Profil Ekranı" width="300" />
+</p>
 * Kullanıcı profili: avatar, kullanıcı adı, toplam odak süresi ve tamamlanan seans sayısı kartı.
 * Hedef takibi: günlük ve haftalık hedef yüzdesi donut grafiği ile görselleştirilir.
 * Ayarlar: tema (açık/karanlık), bildirim tercihleri, ses ayarları sekmesi.
@@ -92,7 +101,9 @@ React Native tabanlı bir verimlilik uygulaması: Pomodoro tekniğini oyunlaşt�
 
 ### 5. Yer İşaretleri (Bookmarks)
 
-![Yer İşaretleri](screenshots/bookmark.jpg)
+<p align="center">
+  <img src="screenshots/bookmark.jpg" alt="Yer İşaretleri Ekranı" width="300" />
+</p>
 
 * Kaydedilen seanslar ve notlar listesi; her kartta tarih, süre ve kısa açıklama.
 * Filtreleme ve sıralama: tarih, etiket veya başarı yüzdesine göre düzenleme.
@@ -101,7 +112,9 @@ React Native tabanlı bir verimlilik uygulaması: Pomodoro tekniğini oyunlaşt�
 
 ### 6. Profil Bahçesi (Profile Garden)
 
-![Profil Bahçesi](screenshots/garden.jpg)
+<p align="center">
+  <img src="screenshots/garden.jpg" alt="Profil Bahçesi" width="300" />
+</p>
 
 * Yıllık ızgara görünümü: 365 hücrede her gün tamamlanan seans çiçekle gösterilir.
 * Heatmap görünümü: seans sürelerine göre koyuluk seviyesi değiştiren renk skalası.
