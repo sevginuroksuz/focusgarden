@@ -38,7 +38,7 @@ React Native tabanlı bir verimlilik uygulaması: Pomodoro tekniğini oyunlaşt�
 
 ## Özellikler
 
-* **Zamanlayıcı**: Öntanımlı 15/25/45 dakikalık seanslar.
+* **Zamanlayıcı**: Çalışma süresini kaydeden ve ilerlemeyi dinamik animasyonlarla motive edici bir şekilde görselleştiren zamanlayıcı kısmı.
 * **Çiçek Bahçesi**: Seans sonuçlarına göre çiçek ekleme animasyonları.
 * **Beyaz Gürültü Desteği**: Odağa odaklanmayı kolaylaştıran ses oynatıcı.
 * **İlerleme Görselleştirme**: Günlük/haftalık/aylık çalışma grafikleri.
