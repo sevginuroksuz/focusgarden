@@ -116,8 +116,8 @@ Aşağıdaki adımlar ile tüm özellikleri kullanabilirsiniz:
 
 ## Linkler
 
-* **GitHub Depo:** [https://github.com/sevginuroksuz/focusgarden](https://github.com/sevginuroksuz/focusgarden)
-* **YouTube Tanıtım Videosu:** [https://youtu.be/YOUR\_VIDEO\_ID](https://www.youtube.com/watch?v=bXLdEwHdhX4&t=2s)
+* **GitHub Depo:** [focusgarden](https://github.com/sevginuroksuz/focusgarden)
+* **YouTube Tanıtım Videosu:** [focusgarden-demo](https://www.youtube.com/watch?v=bXLdEwHdhX4&t=2s)
 
 ---
 
